@@ -11,3 +11,5 @@ Inverted index for the body and the titels of Wikipedia articles using the BM25 
 ## Inverted index with Cosine Similarity and TFIDF
 Inverted index with cosine similarity and TFIDF (Term Frequency-Inverse Document Frequency) ranking for the body of Wikipedia articles. This index enhances the relevance of search results by considering the frequency of terms and their importance across the entire document corpus.
 
+## PageRank and Page Views:
+PageRank and Page Views to assess the importance of Wikipedia articles. The integration involves computing the PageRank scores for articles and incorporating the monthly page views data
