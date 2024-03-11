@@ -17,13 +17,17 @@ except LookupError:
 inverted_index = InvertedIndex()
 subprocess.call(['pip', 'install', 'pyspark'])
 
-# Read index from the bucket
+'''
+Retrieving Index and Data from GCS Bucket: 
+Utilizes the read_pickle function to download pickled objects from a GCS bucket.
+'''
 def read_pickle(bucket_name, pickle_route):
     client = storage.Client()
     blob = client.bucket(bucket_name).blob(pickle_route)
     pick = pickle.loads(blob.download_as_bytes())
     return pick
-
+    
+# Read the index_title, index_data, title_dict and pageRank
 index_title = read_pickle('208564682title','body/Title_BM25.pkl')
 index_data = read_pickle('208564682bodyindex','body/body_BM25.pkl')
 title_dict = read_pickle('208564682indextitle','path/to/TitleId.pickle')
@@ -52,7 +56,7 @@ def tokenize(text):
         return [token for token in tokens if token not in all_stopwords]
 
 
-# Returns the best search results for the query
+# Returns 50 of your best search results for the query
 def search_backend(query):
   tokens = tokenize(query)
   # Use ThreadPoolExecutor for parallel execution
