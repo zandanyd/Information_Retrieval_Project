@@ -9,11 +9,17 @@ This project is an Information Retrieval (IR) system designed to search and retr
 inverted index for information retrieval, incorporating functionality for writing and reading the index to and from disk. The code employs multiple file writers and readers to handle large posting lists efficiently. Additionally, it includes methods for adding documents to the index and calculating global term statistics.
 Parameters:
 self.df: Counter object storing the document frequency per term.
+
 self.term_total:Counter object storing the total frequency per term.
+
 self._posting_list: defaultdict(list) for storing posting lists while building the index.
+
 Use: Internally holds posting lists during the index construction phase.
+
 self.posting_locs: defaultdict(list) mapping terms to posting list file locations.
+
 self.N: Integer storing the total number of documents in the index.
+
 self.similarity: Dictionary storing cosine similarity or BM25 values between documents.
 
 ## Inverted index with BM25:
