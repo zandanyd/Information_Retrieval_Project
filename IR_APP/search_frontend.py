@@ -2,14 +2,11 @@ from flask import Flask, request, jsonify
 from backend import *
 from inverted_index_gcp import *
 import nltk
-
 # Download NLTK stopwords if not already downloaded
 nltk.download('stopwords')
-
 class MyFlaskApp(Flask):
     def run(self, host=None, port=None, debug=None, **options):
         super(MyFlaskApp, self).run(host=host, port=port, debug=debug, **options)
-
 app = MyFlaskApp(__name__)
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
 
