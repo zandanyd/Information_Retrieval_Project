@@ -4,6 +4,7 @@
 ## Overview
 This project is an Information Retrieval (IR) system designed to search and retrieve relevant documents from the entire English Wikipedia corpus (over 6 million articles). The system utilizes a combination of techniques, including tokenization, inverted indexing, and the BM25 ranking algorithm. Additionally, it incorporates PageRank scores to enhance result relevance.
 
+# Inverted Inddex
 ## Inverted Inddex GCP
 inverted index for information retrieval, incorporating functionality for writing and reading the index to and from disk. The code employs multiple file writers and readers to handle large posting lists efficiently. Additionally, it includes methods for adding documents to the index and calculating global term statistics.
 Parameters:
