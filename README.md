@@ -2,7 +2,7 @@
 # Information Retrieval Project - Wikipedia Search Engine
 
 ## Overview
-This project is an Information Retrieval (IR) system designed to search and retrieve relevant documents from the entire English Wikipedia corpus (over 6 million articles). The system utilizes a combination of techniques, including tokenization, inverted indexing, and the BM25 ranking algorithm. Additionally, it incorporates PageRank scores to enhance result relevance.
+This project is an Information Retrieval (IR) system, designed to search and retrieve relevant documents from the entire English Wikipedia corpus (over 6 million articles). The system utilizes a combination of techniques, including tokenization, inverted indexing, and the BM25 ranking algorithm. Additionally, it incorporates PageRank scores to enhance result relevance.
 
 # Inverted Inddex
 ## Inverted Inddex GCP
